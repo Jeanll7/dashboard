@@ -5,3 +5,4 @@
 - [x] Sidebar
 - [x] Adicionar Card
 - [x] Chart
+- [x] Sales
