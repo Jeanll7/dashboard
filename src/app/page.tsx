@@ -1,11 +1,12 @@
 import ChartOverview from "@/components/chart-overview";
+import Sales from "@/components/sales";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BadgeDollarSign, DollarSign, Percent, Users } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="sm:ml-14 p-4">
-      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> 
+      <section className="grid grid-cols-2 lg:grid-cols-4 gap-4"> 
         {/* CARD 1 */}
         <Card>
           <CardHeader>
@@ -87,8 +88,9 @@ export default function Home() {
         </Card>
       </section>
 
-      <section>
+      <section className="mt-4 flex flex-col md:flex-row gap-4">
         <ChartOverview />
+        <Sales />
       </section>
     </main>
   );
